@@ -1,0 +1,161 @@
+// import starting from the src/ folder
+$primaryColor: #BADA55;
+
+
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    background: #f6f6f6;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+h2 {
+    font-size: 21px;
+    font-weight: 700;
+    color: #3a3a3a;
+    div {
+        font-size: 12px;
+        color: #adadad;
+        font-weight: inherit;
+        text-transform: uppercase;
+    }
+}
+
+p {
+    font-size: 12px;
+    line-height: 1.583;
+    font-weight: 400;
+    color: #3a3a3a;
+    margin: 19px auto;
+    white-space: normal;
+}
+
+.container {
+   
+    white-space: nowrap;
+
+    .row {
+        padding: 13px;
+        display: flex;
+        // flex-direction: row;
+        // flex-wrap: nowrap;
+    }
+
+    .col-4 {
+        padding: 13px;
+        display: block;
+        min-height:400px;
+        min-width: 400px;
+    }
+}
+
+.card {
+    
+    width: 100%;
+    transition: box-shadow .3s;
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    background: white;
+
+    &:hover {
+        box-shadow: 0 0 11px rgba(33,33,33,.2); 
+    }
+    
+    .figure {
+        width: 100%;
+        height: 150px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+    }
+
+    article {
+        background: #FFFFFF;
+        padding: 19px;
+
+        .heading {
+            img {
+                border: 0;
+                border-radius: 50%;
+                width: 50px;
+                height: 50px;
+                float: left;
+            }
+            h2 {
+                margin: 0 auto;
+                padding-left: 60px;
+                padding-top: 4px;
+                min-height: 50px;
+            }
+        }
+        .snippet {
+            p:last-child {
+                margin-bottom: 0;
+            }
+            .heart {
+                font-size: 23px;
+
+                i.fa-heart
+                {
+                    color: #4fd330;
+                }
+            }
+        }
+    }
+
+}
+
+.controls {
+    position: fixed;
+    left: 50%;
+    margin: 20px 0;
+    .controls-wrap {
+        text-align: center;
+        a
+        {
+            margin: 10px;
+            display: inline-block;
+        }
+        
+
+        .chevron
+        {
+            font-size: 25px;
+            color: #299232;
+         
+
+        }
+
+        .chevron:before {
+            border-style: solid;
+            border-width: 0.25em 0.25em 0 0;
+            content: '';
+            display: inline-block;
+            height: 0.45em;
+            left: 0.15em;
+            position: relative;
+            top: 0.15em;
+            transform: rotate(-45deg);
+            vertical-align: top;
+            width: 0.45em;
+        }
+        .chevron.left:before {
+            left: 0.25em;
+            transform: rotate(-135deg);
+        }
+        .chevron.right:before {
+            left: 0;
+            transform: rotate(45deg);
+        }
+
+    }
+}
+
